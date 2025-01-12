@@ -1,0 +1,124 @@
+<!doctype html>  
+<html ⚡ lang="ru">  
+<head>  
+    <meta charset="utf-8">  
+    <title>Gama Casino - Официальный сайт</title>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">  
+    <meta name="description" content="Gama Casino - инновационная игровая платформа с уникальными функциями, передовыми технологиями и эксклюзивными бонусами">  
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">  
+    <link rel="canonical" href="https://sportmagadan.ru/">  
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>  
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>  
+    <script async src="https://cdn.ampproject.org/v0.js"></script>  
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>  
+    <script async custom-element="amp-action-macro" src="https://cdn.ampproject.org/v0/amp-action-macro-0.1.js"></script>  
+
+    <style amp-custom>  
+        body {  
+            font-family: -apple-system, system-ui, sans-serif;  
+            padding: 20px;  
+            background: #1a1a2e;  
+            color: #ffffff;  
+        }  
+        .container {  
+            max-width: 600px;  
+            margin: 0 auto;  
+            text-align: center;  
+        }  
+        .blocks {  
+            display: flex;  
+            justify-content: center;  
+            gap: 20px;  
+            margin-top: 20px;  
+        }  
+        .block {  
+            width: 80px;  
+            height: 80px;  
+            background: linear-gradient(145deg, #e31c25, #ff2d55);  
+            border-radius: 10px;  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+            cursor: pointer;  
+            box-shadow: 0 4px 15px rgba(255, 45, 85, 0.3);  
+            font-size: 24px;  
+            font-weight: bold;  
+            color: #ffffff;  
+            user-select: none;  
+            -webkit-user-select: none;  
+            transition: transform 0.2s;  
+        }  
+        .block:hover {  
+            transform: scale(1.05);  
+        }  
+        .title {  
+            color: #ffffff;  
+            margin-bottom: 20px;  
+            font-size: 32px;  
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);  
+        }  
+        .instruction {  
+            color: #b8b8b8;  
+            margin-bottom: 30px;  
+            font-size: 18px;  
+        }  
+        .logo {  
+            margin-bottom: 30px;  
+            font-size: 40px;  
+            font-weight: bold;  
+            background: linear-gradient(45deg, #ff2d55, #ffb347);  
+            -webkit-background-clip: text;  
+            -webkit-text-fill-color: transparent;  
+        }  
+    </style>  
+
+    <script type="application/ld+json">  
+    {  
+        "@context": "https://schema.org",  
+        "@type": "WebSite",  
+        "name": "Gama Casino",  
+        "description": "Инновационная игровая платформа с уникальными функциями и передовыми технологиями"  
+    }  
+    </script>  
+</head>  
+<body>  
+    <amp-action-macro id="redirectMacro"  
+                     execute="AMP.navigateTo(url='https://gama.zerkalo-1.host/')">  
+    </amp-action-macro>  
+
+    <amp-state id="counter">  
+        <script type="application/json">  
+            {  
+                "count": 3  
+            }  
+        </script>  
+    </amp-state>  
+
+    <div class="container">  
+        <div class="logo">Gama Casino</div>  
+        <h1 class="title">Добро пожаловать в мир азарта</h1>  
+        <p class="instruction">Нажмите на блоки для доступа к официальному сайту</p>  
+        
+        <div class="blocks">  
+            <div class="block"  
+                role="button"  
+                tabindex="0"  
+                on="tap:AMP.setState({counter: {count: counter.count - 1}})"  
+                [text]="counter.count >= 3 ? '1' : '✓'">1</div>  
+            
+            <div class="block"  
+                role="button"  
+                tabindex="0"  
+                on="tap:AMP.setState({counter: {count: counter.count - 1}})"  
+                [text]="counter.count >= 2 ? '2' : '✓'">2</div>  
+            
+            <div class="block"  
+                role="button"  
+                tabindex="0"  
+                on="tap:AMP.setState({counter: {count: counter.count - 1}}),redirectMacro.execute"  
+                [text]="counter.count >= 1 ? '3' : '✓'">3</div>  
+        </div>  
+    </div>  
+</body>  
+</html>
